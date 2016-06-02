@@ -1216,6 +1216,61 @@ footer .lower-fotter .copyright p , footer .lower-fotter .copyright a {
 .option-box ul li:nth-child(12){background: #c1392b;}
 .option-box ul li:nth-child(13){background: #34495e;}
 
+/* Load Screen */
+.load-screen{
+	position: fixed;
+	z-index: 10000;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: #191616;
+}
+
+.load-screen .spinner {
+  margin:auto;
+  margin-top: 22%;
+  width: 70px;
+  text-align: center;
+}
+
+.load-screen .spinner > div {
+  width: 20px;
+  height: 20px;
+  background-color: #c5b76e;
+
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.load-screen .spinner .bounce1 {
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+
+.load-screen .spinner .bounce2 {
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+  0%, 80%, 100% { -webkit-transform: scale(0) }
+  40% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bouncedelay {
+  0%, 80%, 100% { 
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  } 40% { 
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+  }
+}
+
+
 /*####################################################################
 		############   14 - Animation .        ############
 #################################################################### */
