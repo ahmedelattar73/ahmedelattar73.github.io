@@ -1,0 +1,89 @@
+/* =======================================================
+Responsive Stylesheet
+===========================================================*/
+
+
+@media (min-width: 1200px) {}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+
+	nav .menu li a{padding-right: 15px; padding-left: 15px; font-size: 15px;}
+	nav .social li{margin-right: 7px; margin-left: 7px;} 
+	.search button{padding: 10px 14px;}
+	.deals .deal-content h3{padding-bottom: 15px;}
+	.deals .deal-content p{margin: 15px 0;}
+	.deals .deal-content .category .cat-content{padding: 10px 6px;}
+	.information .info-box{padding-left: 0;}
+	.information .info-box img{width:70px;}
+	.information .center-box:before{
+		border-top: 56px solid transparent;
+		border-bottom: 56px solid transparent;
+		border-right: 20px solid #13b5e6;
+		left: -20px;	
+	}
+	.information .center-box:after{
+		border-top: 56px solid transparent;
+		border-bottom: 56px solid transparent;
+		border-left: 20px solid #13b5e6;
+		right: -20px;	    
+	}
+	.featured-brand .brand-content img{min-height: 414px;}
+
+} /*ENd min-width: 992px*/
+
+
+
+@media only screen and (min-width: 0) and (max-width: 991px){
+
+	header .shipping{display: none;}
+	header .my-cart{margin-top: 20px;}
+	.deal-wrap{background: none}
+	.deals .deals-slider{padding-left: 20px; padding-right: 20px; background: #fff;}
+	.deals .new-bubble {right: 80px;}
+	.popular-products {margin-top: 30px; background: #fff;}
+	.category-box{width: 50%; float: left;}
+	.category-box.with-title{width: 100%;}
+	.featured-brand ul li {background: #eee;text-align: center;}
+	.featured-brand .row > div:first-child{padding-right: 15px}
+.featured-brand .row > div:last-child{padding-left: 15px}
+.featured-brand .brand-content{padding-right: 15px; padding-left: 15px;}
+	.featured-brand .brand-content{margin:0;}	
+	.help form{margin-top: 15px}
+
+} /*ENd (min-width: 0) and (max-width: 991px) */
+
+
+
+@media only screen and (min-width: 0) and (max-width: 768px){
+	
+	header{text-align: center;}
+	.top-header-right{float: none;}
+	.slider .capture h2{font-size: 40px}
+	.testemonials{background: none;}
+	.testemonials ul{padding: 0;}
+	.testemonials li{padding: 0}
+	.testemonials .person{text-align: center; padding: 30px 5px}
+	.testemonials .img-wrap{margin: auto; margin-bottom: 20px}
+	.testemonials .person .person-img{float: none;}
+	.testemonials .img-wrap:after{display: none;}
+	.testemonials .person .say{padding: 0; width: 100%;}
+	.testemonials .person .say p:first-child:before{left: 12px; top: -37px;}
+	.testemonials .person .say p:first-child:after{right: 26px; bottom: -36px;}
+	.latest-blog .blog-img{width: 40%}
+	.latest-blog .blog-content{width: 60%}
+	.latest-blog .blog-content, .latest-blog .blog-img{margin-bottom: 10px;}
+	.latest-blog .blog-content{padding: 0 10px 0 15px;}
+
+} /*ENd (min-width: 0) and (max-width: 768px)*/
+
+
+@media only screen and (min-width: 0) and (max-width: 479px) {
+
+	footer .lower-fotter .app{text-align: center;}
+	footer .lower-fotter .follow{text-align: center; padding-left: 0px;}
+	footer .lower-fotter .app a{margin-left: 0}
+	footer .lower-fotter .follow li{margin-right: 5px;}
+
+} /*ENd (min-width: 0) and (max-width: 479px) */
+
+
