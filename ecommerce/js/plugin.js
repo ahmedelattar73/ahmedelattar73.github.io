@@ -1,6 +1,26 @@
 /*global $,WOW*/
 $(document).ready(function () {
 
+// Loading Spinner
+	var windowHeight = $(window).height(),
+		spinnerDiv = $(".load-screen .spinner"),
+		spinnerHight = spinnerDiv.height(),
+		spinnerMargin = (windowHeight - spinnerHight ) / 2 ;
+	spinnerDiv.css("marginTop", spinnerMargin);
+
+	$(window).resize(function () {
+		var windowHeight = $(window).height(),
+			spinnerDiv = $(".load-screen .spinner"),
+			spinnerHight = spinnerDiv.height(),
+			spinnerMargin = (windowHeight - spinnerHight ) / 2 ;
+		spinnerDiv.css("marginTop", spinnerMargin);		
+	});
+
+	$(window).load(function () {
+		$(".load-screen").fadeOut(1000);
+	});
+
+	
 // Mobile Nav Button
     "use strict";
 	$("nav .mobile-button").click(function () {
@@ -130,24 +150,7 @@ $(document).ready(function () {
 	});
 
 
-// Loading Spinner
-	var windowHeight = $(window).height(),
-		spinnerDiv = $(".load-screen .spinner"),
-		spinnerHight = spinnerDiv.height(),
-		spinnerMargin = (windowHeight - spinnerHight ) / 2 ;
-	spinnerDiv.css("marginTop", spinnerMargin);
 
-	$(window).resize(function () {
-		var windowHeight = $(window).height(),
-			spinnerDiv = $(".load-screen .spinner"),
-			spinnerHight = spinnerDiv.height(),
-			spinnerMargin = (windowHeight - spinnerHight ) / 2 ;
-		spinnerDiv.css("marginTop", spinnerMargin);		
-	});
-
-	$(window).load(function () {
-		$(".load-screen").fadeOut(1000);
-	});
 
 // =======  featured-brand tabs
 	$(".featured-brand ul li").click(function () {
