@@ -90,6 +90,10 @@ Responsive Stylesheet
 	.deals-slider .owl-next{bottom: 2%;}
 	.information .center-box:before,
 	.information .center-box:after {display: none;}
+	.information .info-box{text-align: center; padding-left: 0;}
+	.information .info-box .info-details,
+	.information .info-box img{float: none;}
+	.information .center-box{background: none}
 
 
 } /*ENd (min-width: 0) and (max-width: 479px) */
