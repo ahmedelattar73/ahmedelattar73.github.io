@@ -74,6 +74,7 @@ Responsive Stylesheet
 	.latest-blog .blog-content, .latest-blog .blog-img{margin-bottom: 10px;}
 	.latest-blog .blog-content{padding: 0 10px 0 15px;}
 
+
 } /*ENd (min-width: 0) and (max-width: 768px)*/
 
 
@@ -83,6 +84,7 @@ Responsive Stylesheet
 	footer .lower-fotter .follow{text-align: center; padding-left: 0px;}
 	footer .lower-fotter .app a{margin-left: 0}
 	footer .lower-fotter .follow li{margin-right: 5px;}
+	.deals .time {display: none;}
 
 } /*ENd (min-width: 0) and (max-width: 479px) */
 
