@@ -110,7 +110,8 @@ $(document).ready(function () {
 	});
 
 // deals Vertical Align Center
-	window.onload = function () {
+
+	$(".hot-categories img").load (function () {
 
 		$(".hot-categories .cat-content").each(function () {
 	        var catheight = $(this).height(),
@@ -126,7 +127,7 @@ $(document).ready(function () {
 				$(this).css("marginTop", catMargin);
 			});
 		});	
-	};
+	});
 
 
 
