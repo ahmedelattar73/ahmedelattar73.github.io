@@ -20,7 +20,7 @@ $(document).ready(function () {
 		$(".load-screen").fadeOut(1000);
 	});
 
-	
+
 // Mobile Nav Button
     "use strict";
 	$("nav .mobile-button").click(function () {
@@ -210,7 +210,7 @@ $(document).ready(function () {
         $(".angel, .search button, .my-cart, nav .menu li:first-child a,nav .menu li a:hover, nav .mobile-menu li a,.deals .deal-content,.slider .capture button, .slide-box .slide-options .button:hover,.hot-categories .cat-title button,.featured-brand .title, footer .fast-links h4:after, .scrooltop:hover,.option-box .option-box-collapse")
             .css("background", liColor);
 
-        $(".search form,.deals .deal-content h3,.help form,.help form button")
+        $(".search form,.help form,.help form button")
             .css("borderColor", liColor);
 
         $(".shipping i,nav .social li:hover i,.deals .time > div,.featured h3 span,.slide-box .slide-options .button:nth-child(2),.hot-categories .cat-title h3 span,.latest-blog .blog-content a,footer .lower-fotter .copyright a,.option-box p")
