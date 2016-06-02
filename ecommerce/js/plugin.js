@@ -110,20 +110,24 @@ $(document).ready(function () {
 	});
 
 // deals Vertical Align Center
-	$(".hot-categories .cat-content").each(function () {
-    var catheight = $(this).height(),
-        hotCategoriesHeight = $(this).parents(".category-box").height(),
-        catMargin = (hotCategoriesHeight - catheight) / 2;
-		$(this).css("marginTop", catMargin);
-	});
-	$(window).resize(function () {
+	window.onload = function () {
+
 		$(".hot-categories .cat-content").each(function () {
-            var catheight = $(this).height(),
-                hotCategoriesHeight = $(this).parents(".category-box").height(),
-                catMargin = (hotCategoriesHeight - catheight) / 2;
+	        var catheight = $(this).height(),
+	            hotCategoriesHeight = $(this).parents(".category-box").height(),
+	            catMargin = (hotCategoriesHeight - catheight) / 2;
 			$(this).css("marginTop", catMargin);
 		});
-	});
+		$(window).resize(function () {
+			$(".hot-categories .cat-content").each(function () {
+	            var catheight = $(this).height(),
+	                hotCategoriesHeight = $(this).parents(".category-box").height(),
+	                catMargin = (hotCategoriesHeight - catheight) / 2;
+				$(this).css("marginTop", catMargin);
+			});
+		});	
+	};
+
 
 
 // =======  featured-brand tabs
