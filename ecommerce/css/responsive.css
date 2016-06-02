@@ -86,8 +86,11 @@ Responsive Stylesheet
 	footer .lower-fotter .follow li{margin-right: 5px;}
 	.deals .time {display: none;}
 	.deals .new-bubble {right: 10px;}
+	.deals-slider .owl-prev,
+	.deals-slider .owl-next{bottom: 2%;}
 	.information .center-box:before,
 	.information .center-box:after {display: none;}
+
 
 } /*ENd (min-width: 0) and (max-width: 479px) */
 
