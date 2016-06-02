@@ -111,7 +111,7 @@ $(document).ready(function () {
 
 // deals Vertical Align Center
 
-	$(".hot-categories img").load (function () {
+	$(".hot-categories img").load(function () {
 
 		$(".hot-categories .cat-content").each(function () {
 	        var catheight = $(this).height(),
@@ -145,6 +145,9 @@ $(document).ready(function () {
 		spinnerDiv.css("marginTop", spinnerMargin);		
 	});
 
+	$(window).load(function () {
+		$(".load-screen").fadeOut(1000);
+	});
 
 // =======  featured-brand tabs
 	$(".featured-brand ul li").click(function () {
