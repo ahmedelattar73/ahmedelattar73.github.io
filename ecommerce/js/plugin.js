@@ -130,6 +130,21 @@ $(document).ready(function () {
 	});
 
 
+// Loading Spinner
+	var windowHeight = $(window).height(),
+		spinnerDiv = $(".load-screen .spinner"),
+		spinnerHight = spinnerDiv.height(),
+		spinnerMargin = (windowHeight - spinnerHight ) / 2 ;
+	spinnerDiv.css("marginTop", spinnerMargin);
+
+	$(window).resize(function () {
+		var windowHeight = $(window).height(),
+			spinnerDiv = $(".load-screen .spinner"),
+			spinnerHight = spinnerDiv.height(),
+			spinnerMargin = (windowHeight - spinnerHight ) / 2 ;
+		spinnerDiv.css("marginTop", spinnerMargin);		
+	});
+
 
 // =======  featured-brand tabs
 	$(".featured-brand ul li").click(function () {
