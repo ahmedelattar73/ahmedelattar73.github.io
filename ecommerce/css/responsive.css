@@ -80,6 +80,7 @@ Responsive Stylesheet
 
 @media only screen and (min-width: 0) and (max-width: 479px) {
 
+	nav .social{background: none}
 	footer .lower-fotter .app{text-align: center;}
 	footer .lower-fotter .follow{text-align: center; padding-left: 0px;}
 	footer .lower-fotter .app a{margin-left: 0}
