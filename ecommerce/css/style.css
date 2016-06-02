@@ -425,7 +425,7 @@ nav .mobile-button:focus{outline: none;}
 	padding-right: 30px;
 	padding-left: 30px;
 	padding-bottom: 30px;
-	border-bottom: 1px solid ;
+	border-bottom: 1px solid #fdf7da;
 	font-weight: 900;
 }
 .deals .deal-content p{margin: 30px 0;}
@@ -1321,4 +1321,4 @@ footer .lower-fotter .copyright p , footer .lower-fotter .copyright a {
  		  animation-delay: 2s;
 }
 
- 
+
