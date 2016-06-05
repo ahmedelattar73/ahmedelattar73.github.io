@@ -1,9 +1,9 @@
 /* =======================================================
 Theme Name: Elattar E-Commerce.
-Theme URl:  Local Host
+Theme URl:  Local Host.
 Description: E-Commerce web site.
-Version: 1.0
-Author: Ahmed Elattar
+Version: 1.0.
+Author: Ahmed Elattar.
 Author URI: facebook.com/ahmedelattar73
 ===========================================================*/
 
@@ -1269,6 +1269,41 @@ footer .lower-fotter .copyright p , footer .lower-fotter .copyright a {
   }
 }
 
+/* TO Old IE Browsers */
+
+.browser-tips{
+	position: fixed;
+	top:38%;
+	z-index: 4;
+	width: 100%;
+}
+.browser-tips-wrap{
+	width: 600px;
+	background: #eee;
+	text-align: center;	
+	padding: 30px;	
+	margin: auto;
+	position: relative;
+}
+.browser-tips p{
+	display: inline-block;
+	font-size: 20px;
+	color: #333
+}
+.browser-tips a{color: #c5b76e}
+.browser-tips button{
+	border: none;
+	outline: none;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	font-size: 18px;
+	position: absolute;
+	top: 0;
+	right: 0;
+
+}
 
 /*####################################################################
 		############   14 - Animation .        ############
