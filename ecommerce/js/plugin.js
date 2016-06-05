@@ -1,12 +1,15 @@
 /*global $,WOW*/
 $(document).ready(function () {
 
+
 // Loading Spinner
 	var windowHeight = $(window).height(),
 		spinnerDiv = $(".load-screen .spinner"),
 		spinnerHight = spinnerDiv.height(),
 		spinnerMargin = (windowHeight - spinnerHight ) / 2 ;
 	spinnerDiv.css("marginTop", spinnerMargin);
+
+	$(".load-screen .spinner").show();	
 
 	$(window).resize(function () {
 		var windowHeight = $(window).height(),
