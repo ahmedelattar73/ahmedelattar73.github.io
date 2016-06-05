@@ -1231,6 +1231,7 @@ footer .lower-fotter .copyright p , footer .lower-fotter .copyright a {
   margin:auto;
   width: 70px;
   text-align: center;
+  display: none;  
 }
 
 .load-screen .spinner > div {
