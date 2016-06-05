@@ -165,7 +165,7 @@ $(document).ready(function () {
 		} else {
 			$(this).removeClass("tab-active-right");
 		}
-		var liName = $(this).attr("data-li-name");
+		var liName = $(this).data("li-name");
 		$(".featured-brand .brand-content img").hide();
 		$(liName).fadeIn(1000);
 	});// ======= End featured-brand tabs
