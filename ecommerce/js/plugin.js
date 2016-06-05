@@ -218,5 +218,11 @@ $(document).ready(function () {
 
 	});
 
+// TO Old IE Browsers
+	$(".browser-tips button").click(function () {
+		$(this).parents(".browser-tips").hide();
+	});
+
+
 
 }); // End document ready
