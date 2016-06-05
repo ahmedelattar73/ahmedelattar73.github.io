@@ -167,7 +167,7 @@ $(document).ready(function () {
 		}
 		var liName = $(this).attr("data-li-name");
 		$(".featured-brand .brand-content img").hide();
-		$("." + liName).fadeIn(1000);
+		$(liName).fadeIn(1000);
 	});// ======= End featured-brand tabs
 
 
