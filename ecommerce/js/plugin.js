@@ -6,17 +6,17 @@ $(document).ready(function () {
 	var windowHeight = $(window).height(),
 		spinnerDiv = $(".load-screen .spinner"),
 		spinnerHight = spinnerDiv.height(),
-		spinnerMargin = (windowHeight - spinnerHight ) / 2 ;
+		spinnerMargin = (windowHeight - spinnerHight) / 2;
 	spinnerDiv.css("marginTop", spinnerMargin);
 
-	$(".load-screen .spinner").show();	
+	$(".load-screen .spinner").show();
 
 	$(window).resize(function () {
 		var windowHeight = $(window).height(),
 			spinnerDiv = $(".load-screen .spinner"),
 			spinnerHight = spinnerDiv.height(),
-			spinnerMargin = (windowHeight - spinnerHight ) / 2 ;
-		spinnerDiv.css("marginTop", spinnerMargin);		
+			spinnerMargin = (windowHeight - spinnerHight) / 2;
+		spinnerDiv.css("marginTop", spinnerMargin);
 	});
 
 	$(window).load(function () {
@@ -24,9 +24,23 @@ $(document).ready(function () {
 	});
 
 
+// Input Placeholder default & focus & blur.
+    $("input").each(function () {
+        var inputPlaceholder = $(this).data("placeholder");
+        $(this).attr("placeholder", inputPlaceholder);
+    });
+    $("input").focus(function () {
+        $(this).attr("placeholder", " ");
+    });
+    $("input").blur(function () {
+        var inputPlaceholder = $(this).data("placeholder");
+        $(this).attr("placeholder", inputPlaceholder);
+    });
+
+
 // Mobile Nav Button
-    "use strict";
 	$("nav .mobile-button").click(function () {
+        "use strict";
 		$("nav .mobile-menu").slideToggle();
 	});
 
@@ -149,7 +163,7 @@ $(document).ready(function () {
 	                catMargin = (hotCategoriesHeight - catheight) / 2;
 				$(this).css("marginTop", catMargin);
 			});
-		});	
+		});
 	});
 
 
@@ -228,4 +242,7 @@ $(document).ready(function () {
 
 
 
+
+    
+    
 }); // End document ready
