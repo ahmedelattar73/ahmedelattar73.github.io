@@ -1,0 +1,89 @@
+<style>
+	.box{
+		position: relative;
+		width: 385px;
+	}
+	.box .overlay{
+		opacity: 0;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background: rgba(0,0,0,.7);
+		-webkit-transition: all 0.6s ease-in-out;
+		   -moz-transition: all 0.6s ease-in-out;
+		     -o-transition: all 0.6s ease-in-out;
+		        transition: all 0.6s ease-in-out;
+	}
+	.box .overlay .capture {
+		text-align: center;
+		margin-top: 30%
+	}
+	.box .overlay .capture span{
+		display: block;
+		color: #fff;
+		opacity: 0;
+		transform: translate(0 , -20px);
+	-webkit-transition: all 0.6s ease-in-out;
+		   -moz-transition: all 0.6s ease-in-out;
+		     -o-transition: all 0.6s ease-in-out;
+		        transition: all 0.6s ease-in-out;		
+	}
+	.box .overlay .capture p{
+		color: #fff;
+		font-weight: 900;
+		font-size: 20px;
+		margin-top: 10px;
+		opacity: 0;
+	-webkit-transition: all 0.6s ease-in-out;
+		   -moz-transition: all 0.6s ease-in-out;
+		     -o-transition: all 0.6s ease-in-out;
+		        transition: all 0.6s ease-in-out;
+		transform: translate(0 , -5px);		        	
+	}
+	.box .overlay .capture button{
+		background: transparent;
+		border: 2px solid #fff;
+		color: #fff;
+		padding: 10px;
+		margin-top: 20px;
+		opacity: 0;
+	-webkit-transition: all 0.6s ease-in-out;
+		   -moz-transition: all 0.6s ease-in-out;
+		     -o-transition: all 0.6s ease-in-out;
+		        transition: all 0.6s ease-in-out;		
+		transform: translate(0 , 20px);		        
+	}
+
+	.box:hover .overlay{
+		opacity: 1;
+	}
+	.box:hover .overlay span{
+		opacity: 1;
+		transform: translate(0);
+	}
+	.box:hover .overlay p{
+		opacity: 1;
+		transform: translate(0);
+	}	
+	.box:hover .overlay button{
+		opacity: 1;
+		transform: translate(0);
+	}			
+</style>
+
+
+<div class="box">
+	<img src="my-img.jpg" alt="">
+	<div class="overlay">
+		<div class="capture">
+			<span>Squarespace Site</span>
+			<p>NEXT LEVEL</p>
+			<button>VIEW PROJECT</button>
+		</div>		
+	</div>
+
+</div>
