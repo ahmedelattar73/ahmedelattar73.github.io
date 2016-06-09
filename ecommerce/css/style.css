@@ -183,7 +183,6 @@ header{
     filter: alpha(opacity=0);
 	background: #fff;
 	border: 1px solid #eee;
-	z-index: 3;
 	padding: 0 15px;
 	-webkit-transition: all 0.7s ease-in-out;
 	   -moz-transition: all 0.7s ease-in-out;
@@ -203,6 +202,7 @@ header{
 	display: inline-block;
 }
 .top-header-left ul.ul-show{
+	z-index: 3;	
 	opacity: 1;
     filter: alpha(opacity=100);
 	-webkit-transform: translate(0);			
