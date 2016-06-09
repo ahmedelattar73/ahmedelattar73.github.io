@@ -179,8 +179,8 @@ header{
 .top-header i{margin-left: 8px;}
 .top-header ul{
 	position: absolute;
-/*	display: none;*/
 	opacity: 0;
+    filter: alpha(opacity=0);
 	background: #fff;
 	border: 1px solid #eee;
 	z-index: 3;
@@ -190,7 +190,8 @@ header{
 		 -o-transition: all 0.7s ease-in-out;
 			transition: all 0.7s ease-in-out;
 	-webkit-transform: translate(5px, 10px);			
-	   -moz-transform: translate(5px, 10px);			
+	   -moz-transform: translate(5px, 10px);
+	    -ms-transform: translate(5px, 10px);			    
 		 -o-transform: translate(5px, 10px);			
 		 	transform: translate(5px, 10px);			
 }
@@ -201,17 +202,16 @@ header{
 	margin-right: 20px;
 	display: inline-block;
 }
-.currency:hover ul,
-.language:hover  ul,
-.my-account:hover  ul{
-	display: block;
+.top-header-left ul.ul-show{
 	opacity: 1;
+    filter: alpha(opacity=100);
 	-webkit-transform: translate(0);			
-	   -moz-transform: translate(0);			
+	   -moz-transform: translate(0);
+	    -ms-transform: translate(0);			    
 		 -o-transform: translate(0);			
 		 	transform: translate(0);		
-
 }
+
 .language span{position: relative;}
 .language img{
     width: 14px;
@@ -588,7 +588,10 @@ nav .mobile-button:focus{outline: none;}
 }
 .advertise{padding: 0 15px; overflow: hidden;}
 .advertise .ads{float: left; width: 33.33333333%;}
-.advertise .ads:hover{opacity: 0.8;}
+.advertise .ads:hover{
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}
 
 /*####################################################################
 		############    04 -  Featured Products .   ############
@@ -748,7 +751,7 @@ nav .mobile-button:focus{outline: none;}
 	width: -webkit-calc(100% - 125px);
 	   width: -moz-calc(100% - 125px);
 	     width: -o-calc(100% - 125px);
-	        width: calc(100% - 125px);	
+	        width: calc(100% - 125px);
 }
 .testemonials .person .say p{
 	color: #fff;
@@ -817,6 +820,7 @@ nav .mobile-button:focus{outline: none;}
 	bottom: 0;
 	right: 0;
 	left: 0;
+	background: rgb(0, 0, 0); /* For IE7 and earlier */      
 	background: rgba(0, 0, 0, 0.7); /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8) , rgba(0, 0, 0, 0.4)); /* For Safari 5.1 to 6.0 */
        background: -moz-linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8) , rgba(0, 0, 0, 0.4)); /* For Firefox 3.6 to 15 */    
@@ -824,16 +828,49 @@ nav .mobile-button:focus{outline: none;}
             background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8) , rgba(0, 0, 0, 0.4)); /* Standard syntax */	
 	text-align: center;
 	opacity: 0;
+    filter: alpha(opacity=0);
 	-webkit-transform: scale(0.7);
 	   -moz-transform: scale(0.7);
+	    -ms-transform: scale(0.7);    
 	 	 -o-transform: scale(0.7);
 			transform: scale(0.7);
 }
-.hot-categories .category-box:hover .overlay{opacity: 1;transform: scale(1);}
-.hot-categories .cat-content{opacity: 0; transform: scale(2);}
-.hot-categories .category-box:hover .cat-content{opacity: 1; transform: scale(1);}
+.hot-categories .category-box:hover .overlay{
+    opacity: 1;
+    filter: alpha(opacity=100); /* For IE8 and earlier */    
+    -webkit-transform: scale(1);
+       -moz-transform: scale(1);
+        -ms-transform: scale(1);    
+         -o-transform: scale(1);
+            transform: scale(1);
+    
+}
+.hot-categories .cat-content{
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transform: scale(2);
+       -moz-transform: scale(2);
+        -ms-transform: scale(2);    
+         -o-transform: scale(2);
+            transform: scale(2);
+    
+}
+.hot-categories .category-box:hover .cat-content{
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transform: scale(1);
+       -moz-transform: scale(1);
+        -ms-transform: scale(1);    
+         -o-transform: scale(1);
+            transform: scale(1);
+    
+}
 .hot-categories .category-box:hover img{
-	transform: scale(1.1) rotate(2deg);
+	-webkit-transform: scale(1.1) rotate(2deg);
+	   -moz-transform: scale(1.1) rotate(2deg);
+	    -ms-transform: scale(1.1) rotate(2deg);    
+	     -o-transform: scale(1.1) rotate(2deg);
+	        transform: scale(1.1) rotate(2deg);
 	-webkit-filter:blur(10px);
 	   -moz-filter:blur(10px);
 	     -o-filter:blur(10px);
@@ -883,7 +920,10 @@ nav .mobile-button:focus{outline: none;}
 }
 .latest-blog .right-blog .blog-img,
 .latest-blog .right-blog .blog-content{float: right;}
-.latest-blog .blog-img:hover{opacity: 0.8;}
+.latest-blog .blog-img:hover{
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}
 .latest-blog .right-blog .blog-content h4{margin-top: 25px;}
 .latest-blog  .blog-img:after{
     content: '';
@@ -1274,7 +1314,7 @@ footer .lower-fotter .copyright p , footer .lower-fotter .copyright a {
 }
 
 @-webkit-keyframes sk-bouncedelay {
-  0%, 80%, 100% { -webkit-transform: scale(0) }
+  0%, 80%, 100% {-webkit-transform: scale(0) }
   40% { -webkit-transform: scale(1.0) }
 }
 
