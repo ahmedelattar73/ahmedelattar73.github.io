@@ -1,7 +1,6 @@
 /*global $,WOW*/
 $(document).ready(function () {
 
-
 // Loading Spinner
 	var windowHeight = $(window).height(),
 		spinnerDiv = $(".load-screen .spinner"),
@@ -23,6 +22,16 @@ $(document).ready(function () {
 		$(".load-screen").fadeOut(1000);
 	});
 
+    
+// top header hover
+    $(".top-header-left").children("div").each(function () {
+        $(this).children("a").hover(function () {
+            $(this).siblings("ul").addClass("ul-show");
+        }, function () {
+            $(this).siblings("ul").removeClass("ul-show");
+        });
+    });
+
 
 // Input Placeholder default & focus & blur.
     $("input").each(function () {
@@ -36,7 +45,7 @@ $(document).ready(function () {
         var inputPlaceholder = $(this).data("placeholder");
         $(this).attr("placeholder", inputPlaceholder);
     });
-
+    
 
 // Mobile Nav Button
 	$("nav .mobile-button").click(function () {
@@ -115,7 +124,6 @@ $(document).ready(function () {
 	        },
 	        1000: {
 	            items: 4
-
 	        }
 	    }
 	});
