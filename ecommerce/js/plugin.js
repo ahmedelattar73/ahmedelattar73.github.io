@@ -23,16 +23,6 @@ $(document).ready(function () {
 	});
 
     
-// top header hover
-    $(".top-header-left").children("div").each(function () {
-        $(this).children("a").hover(function () {
-            $(this).siblings("ul").addClass("ul-show");
-        }, function () {
-            $(this).siblings("ul").removeClass("ul-show");
-        });
-    });
-
-
 // Input Placeholder default & focus & blur.
     $("input").each(function () {
         var inputPlaceholder = $(this).data("placeholder");
@@ -240,7 +230,6 @@ $(document).ready(function () {
 
         $(".shipping i,nav .social li:hover i,.deals .time > div,.featured h3 span,.slide-box .slide-options .button:nth-child(2),.hot-categories .cat-title h3 span,.latest-blog .blog-content a,footer .lower-fotter .copyright a,.option-box p")
             .css("color", liColor);
-
 	});
 
 // TO Old IE Browsers
@@ -249,8 +238,5 @@ $(document).ready(function () {
 	});
 
 
-
-
-    
     
 }); // End document ready
