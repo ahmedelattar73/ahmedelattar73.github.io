@@ -177,8 +177,17 @@ header{
 }
 .top-header span{font-weight: bold;color: #5e5e5e;}
 .top-header i{margin-left: 8px;}
+.currency,
+.language,
+.my-account{
+	position: relative;
+	margin-right: 20px;
+	display: inline-block;
+}
 .top-header ul{
 	position: absolute;
+	z-index: 3;
+	visibility: hidden;
 	opacity: 0;
     filter: alpha(opacity=0);
 	background: #fff;
@@ -194,24 +203,18 @@ header{
 		 -o-transform: translate(5px, 10px);			
 		 	transform: translate(5px, 10px);			
 }
-.currency,
-.language,
-.my-account{
-	position: relative;
-	margin-right: 20px;
-	display: inline-block;
-}
-.top-header-left ul.ul-show{
-	z-index: 3;	
+.currency:hover > ul,
+.language:hover > ul,
+.my-account:hover > ul{
+	visibility: visible;
 	opacity: 1;
     filter: alpha(opacity=100);
 	-webkit-transform: translate(0);			
 	   -moz-transform: translate(0);
 	    -ms-transform: translate(0);			    
 		 -o-transform: translate(0);			
-		 	transform: translate(0);		
+		 	transform: translate(0);
 }
-
 .language span{position: relative;}
 .language img{
     width: 14px;
@@ -1414,5 +1417,3 @@ footer .lower-fotter .copyright p , footer .lower-fotter .copyright a {
   	   -o-animation-delay: 2s;
  		  animation-delay: 2s;
 }
-
-
